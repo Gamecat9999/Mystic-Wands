@@ -1,62 +1,109 @@
-Absolutely, James. This looks like a mythic-style Minecraft plugin called MysticWands, designed to give players magical wands with spellcasting abilities, mana tracking, and visual effects. Based on your style and goals, I’ll write a GitHub README that’s clean, cinematic, and empowering for admins and curious players alike.
+# Mystic Wands - Minecraft Plugin
 
-🌌 MysticWands Plugin
-MysticWands is a mythic Minecraft plugin that brings spellcasting to life with particle effects, sound design, and a dynamic mana system. Perfect for RPG servers, magic-themed adventures, or just surprising your players with a bit of arcane flair.
+A powerful and magical Minecraft plugin that adds custom wands with various spells and a mana system!
 
-✨ Features
-- 🔮 Magic Wands: Fire, Lightning, Teleportation, Healing, Ice, and Destruction
-- 📊 Mana System: Boss bar display, regenerates over time
-- 🎇 Visual Effects: Particles and sounds for each spell
-- 🧙 Admin Commands: Easy wand distribution and mana checks
-- 🧩 Modular Design: Built for expansion and customization
+## 🌟 Features
 
-🚀 Quick Setup
-1. Build the Plugin
-mvn clean package
+### ✨ Magical Wands
+- **Fire Wand**: Launch devastating fireballs
+- **Lightning Wand**: Strike enemies with lightning
+- **Teleport Wand**: Instantly teleport to your target location
+- **Healing Wand**: Restore health with magical energy
+- **Ice Wand**: Freeze areas and slow enemies
+- **Destruction Wand**: Create powerful explosions
 
+### 🔮 Mana System
+- Each player has a mana bar displayed as a boss bar
+- Mana automatically regenerates over time
+- Different spells consume different amounts of mana
+- Mana bar changes color based on current mana level
 
-This creates MysticWands-1.0.0.jar in the target/ folder.
-2. Set Up a Test Server
-- Download a Minecraft 1.20.1 server JAR:
-- Spigot
-- Paper (recommended)
-- Create a folder (e.g., minecraft-server)
-- Place the server JAR inside
-- Create a plugins/ folder
-- Copy MysticWands-1.0.0.jar into plugins/
-3. Launch the Server
-java -Xmx2G -Xms1G -jar paper-1.20.1-XXX.jar nogui
+### ⚡ Spell Effects
+- Beautiful particle effects for each spell
+- Immersive sound effects
+- Area-of-effect spells with visual feedback
+- Cooldown system to prevent spell spam
 
+## 📋 Commands
 
-- Edit eula.txt and set eula=true
-- Restart the server
+- `/wand give <type>` - Give yourself a specific wand
+- `/wand list` - View all available wand types
+- `/wand mana` - Check your current mana
 
-🧪 Testing the Plugin
-Join your server at localhost:25565, then:
-/op YourUsername
+## 🔧 Installation
 
+1. Download the plugin JAR file
+2. Place it in your server's `plugins` folder
+3. Restart your server
+4. The plugin will generate a `config.yml` file for customization
 
-Try these commands:
-| Command | Description | 
-| /wand list | View all available wands | 
-| /wand give fire | Receive a Fire Wand | 
-| /wand mana | Check your current mana | 
-| /wand give lightning | Lightning spell wand | 
-| /wand give teleport | Teleportation wand | 
-| /wand give heal | Healing wand | 
-| /wand give ice | Ice spell wand | 
-| /wand give destruction | Explosion wand | 
+## 🎮 Usage
 
+1. Use `/wand give fire` to get a Fire Wand
+2. Right-click with the wand to cast spells
+3. Watch your mana bar to manage your magical energy
+4. Each spell has a cooldown period
 
-Right-click with a wand to cast spells. Each spell consumes mana and triggers unique effects.
+## ⚙️ Configuration
 
-🛠️ Requirements
-- Minecraft 1.20.1
-- Java 17+
-- Paper or Spigot server
+The plugin includes a comprehensive `config.yml` file where you can:
+- Adjust mana settings (max mana, regen rate)
+- Modify spell properties (damage, range, cooldown)
+- Enable/disable effects and sounds
+- Customize spell costs
 
-📚 Future Plans
-- Custom wand crafting recipes
-- Spell cooldowns and upgrades
-- Configurable mana regen and costs
-- Mythic GUI for wand selection and spell previews
+## 🛡️ Permissions
+
+- `mysticwands.give` - Allows giving wands (default: op)
+- `mysticwands.use` - Allows using wands (default: true)
+
+## 🔮 Spell Details
+
+### Fire Wand (20 Mana)
+- Launches explosive fireballs
+- 3-second cooldown
+- Creates fire and explosion damage
+
+### Lightning Wand (25 Mana)
+- Strikes lightning at target location
+- 5-second cooldown
+- 50-block range
+
+### Teleport Wand (30 Mana)
+- Teleports to target block
+- 10-second cooldown
+- 100-block range
+- Portal particle effects
+
+### Healing Wand (15 Mana)
+- Restores up to 6 hearts
+- 8-second cooldown
+- Heart particle effects
+
+### Ice Wand (20 Mana)
+- Freezes area and slows entities
+- 6-second cooldown
+- Creates ice blocks and snow
+
+### Destruction Wand (40 Mana)
+- Creates powerful explosions
+- 15-second cooldown
+- Most expensive but most powerful
+
+## 🚀 Building from Source
+
+1. Clone this repository
+2. Run `mvn clean package`
+3. The compiled JAR will be in the `target` folder
+
+## 📝 Requirements
+
+- Minecraft Server 1.16+
+- Spigot/Paper/Bukkit
+- Java 8+
+
+## 🐛 Support
+
+If you encounter any issues or have suggestions, please create an issue on the repository!
+
+Enjoy your magical adventures! ✨🔮⚡

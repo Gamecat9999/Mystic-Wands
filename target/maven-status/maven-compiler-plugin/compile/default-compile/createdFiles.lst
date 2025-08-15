@@ -1,0 +1,17 @@
+com\mysticwands\spells\HealSpell.class
+com\mysticwands\commands\WandCommand.class
+com\mysticwands\MysticWands.class
+com\mysticwands\spells\TeleportSpell.class
+com\mysticwands\managers\SpellManager.class
+com\mysticwands\spells\FireballSpell.class
+com\mysticwands\listeners\PlayerInteractListener.class
+com\mysticwands\listeners\PlayerJoinListener.class
+com\mysticwands\managers\ManaManager.class
+com\mysticwands\spells\LightningSpell.class
+com\mysticwands\wands\Wand.class
+com\mysticwands\wands\WandType.class
+com\mysticwands\spells\Spell.class
+com\mysticwands\managers\ManaManager$1.class
+com\mysticwands\managers\WandManager.class
+com\mysticwands\spells\ExplosionSpell.class
+com\mysticwands\spells\FreezeSpell.class

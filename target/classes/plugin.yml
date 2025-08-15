@@ -1,0 +1,20 @@
+name: MysticWands
+version: 1.0.0
+main: com.mysticwands.MysticWands
+api-version: 1.16
+author: YourName
+description: A magical wands plugin with spells and mana system
+
+commands:
+  wand:
+    description: Main wand command
+    usage: /wand <give|list|mana>
+    permission: mysticwands.give
+
+permissions:
+  mysticwands.give:
+    description: Allows player to give wands
+    default: op
+  mysticwands.use:
+    description: Allows player to use wands
+    default: true
